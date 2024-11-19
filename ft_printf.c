@@ -6,7 +6,7 @@
 /*   By: mel-mouh <mel-mouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 20:30:02 by mel-mouh          #+#    #+#             */
-/*   Updated: 2024/11/18 23:07:36 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2024/11/19 11:43:39 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	ft_printf(const char *str, ...)
 			count += ft_putchar(str[i]);
 		i++;
 	}
+	va_end(args);
 	return (count);
 }
