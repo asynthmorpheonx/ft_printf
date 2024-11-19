@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbrhex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mel-mouh <mel-mouh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 19:09:24 by mel-mouh          #+#    #+#             */
-/*   Updated: 2024/11/18 23:11:38 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2024/11/19 22:15:37 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr_hex(unsigned long int n, char	*hexa)
 {
@@ -27,7 +27,7 @@ int	ft_putnbr_hex(unsigned long int n, char	*hexa)
 		n /= 16;
 	}
 	count = i;
-	while (i >= 0)
+	while (i > 0)
 		ft_putchar(buffer[--i]);
 	return (count);
 }

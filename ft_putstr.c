@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mel-mouh <mel-mouh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 19:08:39 by mel-mouh          #+#    #+#             */
-/*   Updated: 2024/11/18 23:11:56 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2024/11/19 22:04:39 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char *s)
 {
@@ -18,7 +18,7 @@ int	ft_putstr(char *s)
 
 	i = 0;
 	if (s == NULL)
-		return (-1);
+		return (ft_putstr("(null)"));
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);
