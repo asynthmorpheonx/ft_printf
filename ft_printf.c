@@ -6,7 +6,7 @@
 /*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 20:30:02 by mel-mouh          #+#    #+#             */
-/*   Updated: 2024/11/19 22:41:11 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:30:35 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_printf(const char *str, ...)
 	int		count;
 	va_list	args;
 
-	if (str == NULL)
+	if (str == NULL || write(1, 0, 0) == -1)
 		return (-1);
 	va_start(args, str);
 	i = 0;
